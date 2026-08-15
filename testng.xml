@@ -11,6 +11,9 @@
 <suite name="LoginSuite">
     <listeners>
         <listener class-name="com.example.listeners.TestListener"/>
+        <listener class-name="com.example.listeners.SuiteListener"/>   <!-- init + flush report once per suite -->
+	    <listener class-name="com.example.listeners.ConfigListener"/>  <!-- setup/teardown logging -->
+	    <listener class-name="com.example.listeners.RetryListener"/> 
     </listeners>
     <test name="LoginOnly">
         <classes>

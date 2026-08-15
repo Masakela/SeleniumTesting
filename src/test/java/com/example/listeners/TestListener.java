@@ -44,10 +44,10 @@ public class TestListener implements ITestListener {
         test.get().log(Status.SKIP, "Skipped");
     }
 
-    @Override
-    public void onFinish(ITestContext context) {
-        extent.flush();   // writes the HTML — essential, or the report is empty
-    }
+	/*
+	 * @Override public void onFinish(ITestContext context) { extent.flush(); //
+	 * writes the HTML — essential, or the report is empty }
+	 */
 
     /** Pulls the WebDriver out of the test instance and saves a PNG. */
     private String captureScreenshot(ITestResult result) {
