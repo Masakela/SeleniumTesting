@@ -9,7 +9,7 @@ import org.testng.annotations.DataProvider;
 		public static final String ACCEPTED_USERNAMES_HEADING = "Accepted usernames are:";
 		public static final String PASSWORD_FOR_ALL_USERS = "Password for all users:";
 		public static final String PASSWORD = "secret_sauce";
-		public static final String LOGIN_PAGE_HEADER = "ML Labs";
+		public static final String LOGIN_PAGE_HEADER = "Swag Labs";
 
 		 /**
 	     * DataProvider = TestNG's data-driven mechanism. The one @Test above runs
