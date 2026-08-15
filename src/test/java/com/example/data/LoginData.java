@@ -48,4 +48,6 @@ import org.testng.annotations.DataProvider;
 	        );
 	    } 
 	}
+	
+	//Check for polling build every minute
 
