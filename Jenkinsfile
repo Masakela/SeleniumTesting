@@ -1,12 +1,8 @@
-// Minimal declarative pipeline — the CI half of the story.
-// The key idea: `mvn test` runs the suite on every build, and a failing test
-// fails the build, so broken code can't merge. This is what makes the automation
-// a QUALITY GATE rather than a script someone runs manually.
 pipeline {
     agent any
 
     tools {
-        maven 'Maven3'   // must match a Maven install in Manage Jenkins > Global Tool Config
+        maven 'Maven3'   // must match a Maven install in Manage Jenkins > Tools
         jdk 'JDK17'      // same for the JDK
     }
 
@@ -15,8 +11,8 @@ pipeline {
     }
 
     triggers {
-        // Run nightly at 2am in addition to on-demand / on-PR triggers.
-        cron('H 2 * * *')
+        pollSCM('H/5 * * * *')   // build on new commits (checks every ~5 min)
+        cron('H 2 * * *')        // nightly run
     }
 
     stages {
@@ -25,19 +21,16 @@ pipeline {
         }
         stage('Run Login Tests') {
             steps {
-                // login.xml scopes the run to LoginTest only;
-                // -Dbrowser overrides the suite parameter (see BaseTest).
-                sh "mvn -B clean test -DsuiteXmlFile=login.xml -Dbrowser=${params.BROWSER}"
+                // bat for Windows agents; login.xml scopes to LoginTest only
+                bat "mvn -B clean test -DsuiteXmlFile=login.xml -Dbrowser=%BROWSER%"
             }
         }
     }
 
     post {
         always {
-            // TestNG results in the Jenkins UI
             junit 'target/surefire-reports/*.xml'
 
-            // Extent HTML report
             publishHTML(target: [
                 reportDir: 'test-output/extent',
                 reportFiles: 'ExtentReport.html',
@@ -47,7 +40,6 @@ pipeline {
                 allowMissing: false
             ])
 
-            // Screenshots-on-failure archived as build artifacts
             archiveArtifacts artifacts: 'test-output/screenshots/*.png', allowEmptyArchive: true
         }
     }
