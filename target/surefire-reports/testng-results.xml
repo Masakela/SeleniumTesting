@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-15T12:14:44 CDT" name="LoginSuite" finished-at="2026-08-15T12:15:01 CDT" duration-ms="16335">
+  <suite started-at="2026-08-16T15:48:47 CDT" name="LoginSuite" finished-at="2026-08-16T15:49:06 CDT" duration-ms="18585">
     <groups>
     </groups>
-    <test started-at="2026-08-15T12:14:44 CDT" name="LoginOnly" finished-at="2026-08-15T12:15:01 CDT" duration-ms="16335">
+    <test started-at="2026-08-16T15:48:47 CDT" name="LoginOnly" finished-at="2026-08-16T15:49:06 CDT" duration-ms="18585">
       <class name="com.example.tests.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:44 CDT" name="setUp" finished-at="2026-08-15T12:14:46 CDT" duration-ms="1478" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:48:47 CDT" name="setUp" finished-at="2026-08-16T15:48:50 CDT" duration-ms="2045" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="acceptedUsernamesPanel()[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:46 CDT" name="acceptedUsernamesPanel" description="Accepted usernames/password panel: heading and list are correct" finished-at="2026-08-15T12:14:46 CDT" duration-ms="434" status="PASS">
+        <test-method signature="acceptedUsernamesPanel()[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:48:50 CDT" name="acceptedUsernamesPanel" description="Accepted usernames/password panel: heading and list are correct" finished-at="2026-08-16T15:48:50 CDT" duration-ms="609" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acceptedUsernamesPanel -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:46 CDT" name="tearDown" finished-at="2026-08-15T12:14:47 CDT" duration-ms="314" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:48:50 CDT" name="tearDown" finished-at="2026-08-16T15:48:50 CDT" duration-ms="288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:47 CDT" name="setUp" finished-at="2026-08-15T12:14:48 CDT" duration-ms="1188" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:48:51 CDT" name="setUp" finished-at="2026-08-16T15:48:52 CDT" duration-ms="1497" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginShowsError(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:48 CDT" name="invalidLoginShowsError" description="A locked-out user is rejected with an error" data-provider="badCredentials" finished-at="2026-08-15T12:14:48 CDT" duration-ms="550" status="PASS">
+        <test-method signature="invalidLoginShowsError(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:48:52 CDT" name="invalidLoginShowsError" description="A locked-out user is rejected with an error" data-provider="badCredentialsExcel" finished-at="2026-08-16T15:48:53 CDT" duration-ms="600" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -58,11 +58,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginShowsError -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:48 CDT" name="tearDown" finished-at="2026-08-15T12:14:49 CDT" duration-ms="404" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:48:53 CDT" name="tearDown" finished-at="2026-08-16T15:48:53 CDT" duration-ms="411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:49 CDT" name="setUp" finished-at="2026-08-15T12:14:50 CDT" duration-ms="1039" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:48:53 CDT" name="setUp" finished-at="2026-08-16T15:48:55 CDT" duration-ms="1353" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,7 +73,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginShowsError(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:50 CDT" name="invalidLoginShowsError" description="A locked-out user is rejected with an error" data-provider="badCredentials" finished-at="2026-08-15T12:14:50 CDT" duration-ms="527" status="PASS">
+        <test-method signature="invalidLoginShowsError(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:48:55 CDT" name="invalidLoginShowsError" description="A locked-out user is rejected with an error" data-provider="badCredentialsExcel" finished-at="2026-08-16T15:48:55 CDT" duration-ms="633" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,11 +94,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginShowsError -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:50 CDT" name="tearDown" finished-at="2026-08-15T12:14:51 CDT" duration-ms="343" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:48:55 CDT" name="tearDown" finished-at="2026-08-16T15:48:56 CDT" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:51 CDT" name="setUp" finished-at="2026-08-15T12:14:52 CDT" duration-ms="1050" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:48:56 CDT" name="setUp" finished-at="2026-08-16T15:48:57 CDT" duration-ms="1058" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -109,7 +109,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginShowsError(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:52 CDT" name="invalidLoginShowsError" description="A locked-out user is rejected with an error" data-provider="badCredentials" finished-at="2026-08-15T12:14:52 CDT" duration-ms="600" status="PASS">
+        <test-method signature="invalidLoginShowsError(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:48:57 CDT" name="invalidLoginShowsError" description="A locked-out user is rejected with an error" data-provider="badCredentialsExcel" finished-at="2026-08-16T15:48:57 CDT" duration-ms="572" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -130,11 +130,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginShowsError -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:52 CDT" name="tearDown" finished-at="2026-08-15T12:14:53 CDT" duration-ms="313" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:48:57 CDT" name="tearDown" finished-at="2026-08-16T15:48:58 CDT" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:53 CDT" name="setUp" finished-at="2026-08-15T12:14:54 CDT" duration-ms="1047" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:48:58 CDT" name="setUp" finished-at="2026-08-16T15:48:59 CDT" duration-ms="990" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -145,7 +145,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginShowsError(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:54 CDT" name="invalidLoginShowsError" description="A locked-out user is rejected with an error" data-provider="badCredentials" finished-at="2026-08-15T12:14:54 CDT" duration-ms="572" status="PASS">
+        <test-method signature="invalidLoginShowsError(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:48:59 CDT" name="invalidLoginShowsError" description="A locked-out user is rejected with an error" data-provider="badCredentialsExcel" finished-at="2026-08-16T15:48:59 CDT" duration-ms="565" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -166,11 +166,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginShowsError -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:54 CDT" name="tearDown" finished-at="2026-08-15T12:14:55 CDT" duration-ms="426" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:48:59 CDT" name="tearDown" finished-at="2026-08-16T15:49:00 CDT" duration-ms="322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:55 CDT" name="setUp" finished-at="2026-08-15T12:14:56 CDT" duration-ms="1095" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:49:00 CDT" name="setUp" finished-at="2026-08-16T15:49:01 CDT" duration-ms="1312" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -181,7 +181,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginShowsError(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:56 CDT" name="invalidLoginShowsError" description="A locked-out user is rejected with an error" data-provider="badCredentials" finished-at="2026-08-15T12:14:56 CDT" duration-ms="594" status="PASS">
+        <test-method signature="invalidLoginShowsError(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:49:01 CDT" name="invalidLoginShowsError" description="A locked-out user is rejected with an error" data-provider="badCredentialsExcel" finished-at="2026-08-16T15:49:01 CDT" duration-ms="561" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -202,11 +202,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginShowsError -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:56 CDT" name="tearDown" finished-at="2026-08-15T12:14:57 CDT" duration-ms="299" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:49:01 CDT" name="tearDown" finished-at="2026-08-16T15:49:02 CDT" duration-ms="437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:57 CDT" name="setUp" finished-at="2026-08-15T12:14:58 CDT" duration-ms="1007" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:49:02 CDT" name="setUp" finished-at="2026-08-16T15:49:03 CDT" duration-ms="1309" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -217,7 +217,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginShowsError(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:58 CDT" name="invalidLoginShowsError" description="A locked-out user is rejected with an error" data-provider="badCredentials" finished-at="2026-08-15T12:14:58 CDT" duration-ms="602" status="PASS">
+        <test-method signature="invalidLoginShowsError(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:49:03 CDT" name="invalidLoginShowsError" description="A locked-out user is rejected with an error" data-provider="badCredentialsExcel" finished-at="2026-08-16T15:49:04 CDT" duration-ms="636" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -238,11 +238,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginShowsError -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:58 CDT" name="tearDown" finished-at="2026-08-15T12:14:59 CDT" duration-ms="390" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:49:04 CDT" name="tearDown" finished-at="2026-08-16T15:49:04 CDT" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:14:59 CDT" name="setUp" finished-at="2026-08-15T12:15:00 CDT" duration-ms="996" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:49:04 CDT" name="setUp" finished-at="2026-08-16T15:49:05 CDT" duration-ms="991" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -253,11 +253,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginSucceeds()[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:15:00 CDT" name="validLoginSucceeds" description="Valid credentials land on the inventory page" finished-at="2026-08-15T12:15:00 CDT" duration-ms="629" status="PASS">
+        <test-method signature="validLoginSucceeds(java.lang.String,java.lang.String)[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:49:05 CDT" name="validLoginSucceeds" description="Valid credentials land on the inventory page" data-provider="goodCredentialsExcel" finished-at="2026-08-16T15:49:06 CDT" duration-ms="594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginSucceeds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@2c35e847]" started-at="2026-08-15T12:15:00 CDT" name="tearDown" finished-at="2026-08-15T12:15:01 CDT" duration-ms="396" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTest@5a56cdac]" started-at="2026-08-16T15:49:06 CDT" name="tearDown" finished-at="2026-08-16T15:49:06 CDT" duration-ms="374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

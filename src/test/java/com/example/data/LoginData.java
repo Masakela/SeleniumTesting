@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.testng.annotations.DataProvider;
 
+import com.example.utils.ExcelReader;
+
 	public class LoginData {
 		
 		public static final String ACCEPTED_USERNAMES_HEADING = "Accepted usernames are:";
@@ -26,6 +28,26 @@ import org.testng.annotations.DataProvider;
 	            {"wrong_username", "secret_sauce", "Username and password do not match any user in this service"}
 	        };
 	    }
+	    
+	    /**
+	     * Reads Data from a spreadsheet from the Good Credentials tab
+	     * 
+	     */
+	    @DataProvider(name = "goodCredentialsExcel")
+	    public static Object[][] goodCredentialsExcel() {
+	        return ExcelReader.readAsDataProvider("src/test/resources/LoginData.xlsx", "Good Credentials");
+	    }
+	    
+	    /**
+	     * Reads Data from a spreadsheet from the Bad Credentials tab
+	     * 
+	     */
+	    @DataProvider(name = "badCredentialsExcel")
+	    public static Object[][] badCredentialsExcel() {
+	        return ExcelReader.readAsDataProvider(
+	                "src/test/resources/LoginData.xlsx", "Bad Credentials");
+	    }
+	
 	    
 	    /**
 	     * List of usernames provided at the bottom of the login page.

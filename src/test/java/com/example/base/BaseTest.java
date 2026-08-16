@@ -40,7 +40,7 @@ public abstract class BaseTest {
         WebDriver rawDriver = null;   // build the real driver first
         
         switch (target.toLowerCase()) {
-            case "firefox" -> driver = new FirefoxDriver();
+            case "firefox" -> rawDriver = new FirefoxDriver();
             default -> {
                 ChromeOptions options = new ChromeOptions();
                 //options.addArguments("--headless=new");   // comment out to watch it run locally

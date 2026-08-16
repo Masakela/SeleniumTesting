@@ -6,8 +6,8 @@
       <class name="com.example.tests.LoginTest">
         <methods>
           <include name="tearDown"/>
+          <include name="validLoginSucceeds"/>
           <include name="setUp"/>
-          <include name="invalidLoginShowsError" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- com.example.tests.LoginTest -->
     </classes>

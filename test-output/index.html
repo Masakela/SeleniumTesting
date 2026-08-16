@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\masak\AppData\Local\Temp\testng-eclipse-292921663\testng-customsuite.xml</span>
+                    <span>C:\Users\masak\AppData\Local\Temp\testng-eclipse--690472291\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.example.tests.LoginTest" class="method navigator-link" hash-for-method="validLoginSucceeds">validLoginSucceeds</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,12 +122,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.example.tests.LoginTest" class="method navigator-link" hash-for-method="invalidLoginShowsError(locked_out_user, secret_sauce, locked out)">invalidLoginShowsError(locked_out_user, secret_sauce, locked out)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.example.tests.LoginTest" class="method navigator-link" hash-for-method="invalidLoginShowsError(standard_user, wrong_password, do not match)">invalidLoginShowsError(standard_user, wrong_password, do not match)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.example.tests.LoginTest" class="method navigator-link" hash-for-method="invalidLoginShowsError(wrong_username, secret_sauce, Username and password do not match any user in this service)">invalidLoginShowsError(wrong_username, secret_sauce, Username and password do not match any user in this service)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -123,7 +132,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.example.tests.LoginTest" class="method navigator-link" hash-for-method="validLoginSucceeds">validLoginSucceeds</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.example.tests.LoginTest" class="method navigator-link" hash-for-method="invalidLoginShowsError(standard_user, , Password is required)">invalidLoginShowsError(standard_user, , Password is required)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.example.tests.LoginTest" class="method navigator-link" hash-for-method="invalidLoginShowsError(locked_out_user, secret_sauce, locked out)">invalidLoginShowsError(locked_out_user, secret_sauce, locked out)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.example.tests.LoginTest" class="method navigator-link" hash-for-method="invalidLoginShowsError(wrong_username, wrong_password, Username and password do not match any user in this service)">invalidLoginShowsError(wrong_username, wrong_password, Username and password do not match any user in this service)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.example.tests.LoginTest" class="method navigator-link" hash-for-method="invalidLoginShowsError(standard_user, wrong_password, do not match)">invalidLoginShowsError(standard_user, wrong_password, do not match)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -138,6 +162,53 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.example.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginSucceeds">
+                  </a> <!-- validLoginSucceeds -->
+                  <span class="method-name">validLoginSucceeds</span>
+                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
+[public void com.example.tests.LoginTest.validLoginSucceeds(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: validLoginSucceeds([java.lang.String arg0, java.lang.String arg1])
+Arguments: [(java.lang.String) standard_user,(java.lang.String) secret_sauce,(java.lang.String) ]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Valid credentials land on the inventory page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -155,20 +226,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="invalidLoginShowsError(locked_out_user, secret_sauce, locked out)">
-                  </a> <!-- invalidLoginShowsError(locked_out_user, secret_sauce, locked out) -->
+                  <a name="invalidLoginShowsError(wrong_username, secret_sauce, Username and password do not match any user in this service)">
+                  </a> <!-- invalidLoginShowsError(wrong_username, secret_sauce, Username and password do not match any user in this service) -->
                   <span class="method-name">invalidLoginShowsError</span>
-                  <span class="parameters">(locked_out_user,secret_sauce,locked out)</span>
-                  <em>
-(A locked-out user is rejected with an error)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidLoginShowsError(standard_user, wrong_password, do not match)">
-                  </a> <!-- invalidLoginShowsError(standard_user, wrong_password, do not match) -->
-                  <span class="method-name">invalidLoginShowsError</span>
-                  <span class="parameters">(standard_user,wrong_password,do not match)</span>
+                  <span class="parameters">(wrong_username,secret_sauce,Username and password do not match any user in this service)</span>
                   <em>
 (A locked-out user is rejected with an error)                  </em>
                 </div> <!-- method-content -->
@@ -185,11 +246,42 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validLoginSucceeds">
-                  </a> <!-- validLoginSucceeds -->
-                  <span class="method-name">validLoginSucceeds</span>
+                  <a name="invalidLoginShowsError(standard_user, , Password is required)">
+                  </a> <!-- invalidLoginShowsError(standard_user, , Password is required) -->
+                  <span class="method-name">invalidLoginShowsError</span>
+                  <span class="parameters">(standard_user,,Password is required)</span>
                   <em>
-(Valid credentials land on the inventory page)                  </em>
+(A locked-out user is rejected with an error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginShowsError(locked_out_user, secret_sauce, locked out)">
+                  </a> <!-- invalidLoginShowsError(locked_out_user, secret_sauce, locked out) -->
+                  <span class="method-name">invalidLoginShowsError</span>
+                  <span class="parameters">(locked_out_user,secret_sauce,locked out)</span>
+                  <em>
+(A locked-out user is rejected with an error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginShowsError(wrong_username, wrong_password, Username and password do not match any user in this service)">
+                  </a> <!-- invalidLoginShowsError(wrong_username, wrong_password, Username and password do not match any user in this service) -->
+                  <span class="method-name">invalidLoginShowsError</span>
+                  <span class="parameters">(wrong_username,wrong_password,Username and password do not match any user in this service)</span>
+                  <em>
+(A locked-out user is rejected with an error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginShowsError(standard_user, wrong_password, do not match)">
+                  </a> <!-- invalidLoginShowsError(standard_user, wrong_password, do not match) -->
+                  <span class="method-name">invalidLoginShowsError</span>
+                  <span class="parameters">(standard_user,wrong_password,do not match)</span>
+                  <em>
+(A locked-out user is rejected with an error)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,7 +289,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\masak\AppData\Local\Temp\testng-eclipse-292921663\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\masak\AppData\Local\Temp\testng-eclipse--690472291\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -246,32 +338,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validLoginSucceeds')
+data.setCell(0, 1, 'acceptedUsernamesPanel')
 data.setCell(0, 2, 'com.example.tests.LoginTest')
-data.setCell(0, 3, 580);
+data.setCell(0, 3, 772);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'acceptedUsernamesPanel')
+data.setCell(1, 1, 'invalidLoginShowsError')
 data.setCell(1, 2, 'com.example.tests.LoginTest')
-data.setCell(1, 3, 569);
+data.setCell(1, 3, 660);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'invalidLoginShowsError')
 data.setCell(2, 2, 'com.example.tests.LoginTest')
-data.setCell(2, 3, 566);
+data.setCell(2, 3, 649);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'invalidLoginShowsError')
 data.setCell(3, 2, 'com.example.tests.LoginTest')
-data.setCell(3, 3, 520);
+data.setCell(3, 3, 606);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'invalidLoginShowsError')
 data.setCell(4, 2, 'com.example.tests.LoginTest')
-data.setCell(4, 3, 506);
+data.setCell(4, 3, 573);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'invalidLoginShowsError')
+data.setCell(5, 2, 'com.example.tests.LoginTest')
+data.setCell(5, 3, 553);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'invalidLoginShowsError')
+data.setCell(6, 2, 'com.example.tests.LoginTest')
+data.setCell(6, 3, 550);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validLoginSucceeds')
+data.setCell(7, 2, 'com.example.tests.LoginTest')
+data.setCell(7, 3, 20);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -304,59 +408,83 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">acceptedUsernamesPanel</span>
-                <span class="method-start">7381 ms</span>
+                <span class="method-start">2153 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7954 ms</span>
+                <span class="method-start">2928 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">8184 ms</span>
+                <span class="method-start">3726 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidLoginShowsError(locked_out_user, secret_sauce, locked out)</span>
-                <span class="method-start">9111 ms</span>
+                <span class="method-start">5018 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9678 ms</span>
+                <span class="method-start">5679 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">9897 ms</span>
+                <span class="method-start">5969 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidLoginShowsError(standard_user, wrong_password, do not match)</span>
-                <span class="method-start">10803 ms</span>
+                <span class="method-start">7167 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11324 ms</span>
+                <span class="method-start">7818 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">11521 ms</span>
+                <span class="method-start">8098 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidLoginShowsError(, secret_sauce, Username is required)</span>
-                <span class="method-start">12452 ms</span>
+                <span class="method-start">9408 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12959 ms</span>
+                <span class="method-start">9959 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">13307 ms</span>
+                <span class="method-start">10249 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validLoginSucceeds</span>
-                <span class="method-start">14229 ms</span>
+                <span class="method-name">invalidLoginShowsError(standard_user, , Password is required)</span>
+                <span class="method-start">11547 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14811 ms</span>
+                <span class="method-start">12102 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">12575 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginShowsError(wrong_username, wrong_password, Username and password do not match any user in this service)</span>
+                <span class="method-start">13883 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14490 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">14807 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginShowsError(wrong_username, secret_sauce, Username and password do not match any user in this service)</span>
+                <span class="method-start">15782 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16357 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,0 +1,5 @@
+com\example\utils\ExcelReader.class
+com\example\pages\LoginPage.class
+com\example\base\BasePage.class
+com\example\pages\InventoryPage.class
+com\example\reports\ExtentManager.class

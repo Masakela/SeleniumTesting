@@ -14,18 +14,19 @@ import org.testng.annotations.Test;
  */
 public class LoginTest extends BaseTest {
 
-    @Test(description = "Valid credentials land on the inventory page")
-    public void validLoginSucceeds() {
+    @Test(description = "Valid credentials land on the inventory page", dataProvider = "goodCredentialsExcel",
+    		dataProviderClass = LoginData.class)
+    public void validLoginSucceeds(String username, String password) {
         InventoryPage inventory = new LoginPage(driver)
                 .open()
-                .loginAs("standard_user", "secret_sauce");
+                .loginAs(username, password);
 
         Assert.assertTrue(inventory.isLoaded(),
                 "Inventory page should load after a valid login");
     }
 
     @Test(description = "A locked-out user is rejected with an error",
-          dataProvider = "badCredentials", dataProviderClass = LoginData.class)
+          dataProvider = "badCredentialsExcel", dataProviderClass = LoginData.class)
     public void invalidLoginShowsError(String user, String pass, String expectedFragment) {
         String error = new LoginPage(driver)
                 .open()
