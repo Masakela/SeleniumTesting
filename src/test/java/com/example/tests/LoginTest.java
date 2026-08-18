@@ -17,7 +17,7 @@ public class LoginTest extends BaseTest {
     @Test(description = "Valid credentials land on the inventory page", dataProvider = "goodCredentialsExcel",
     		dataProviderClass = LoginData.class)
     public void validLoginSucceeds(String username, String password) {
-        InventoryPage inventory = new LoginPage(driver)
+        InventoryPage inventory = new LoginPage(getDriver())
                 .open()
                 .loginAs(username, password);
 
@@ -28,7 +28,7 @@ public class LoginTest extends BaseTest {
     @Test(description = "A locked-out user is rejected with an error",
           dataProvider = "badCredentialsExcel", dataProviderClass = LoginData.class)
     public void invalidLoginShowsError(String user, String pass, String expectedFragment) {
-        String error = new LoginPage(driver)
+        String error = new LoginPage(getDriver())
                 .open()
                 .loginExpectingFailure(user, pass)
                 .getErrorMessage();
@@ -59,7 +59,7 @@ public class LoginTest extends BaseTest {
     @Test(description = "Accepted usernames/password panel: heading and list are correct")
     public void acceptedUsernamesPanel() {
       
-    	LoginPage lp = new LoginPage(driver).open();
+    	LoginPage lp = new LoginPage(getDriver()).open();
     	
     	Assert.assertEquals(lp.headerChecker(), 
     			LoginData.LOGIN_PAGE_HEADER, "Login Page header is a mismatch");

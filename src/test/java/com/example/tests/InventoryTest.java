@@ -24,7 +24,7 @@ public class InventoryTest extends BaseTest {
 
     @BeforeMethod(dependsOnMethods = "setUp")
     public void loginFirst() {
-        inventory = new LoginPage(driver)
+        inventory = new LoginPage(getDriver())
                 .open()
                 .loginAs("standard_user", "secret_sauce");
     }
