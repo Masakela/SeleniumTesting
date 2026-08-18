@@ -1,4 +1,4 @@
-package com.example.tests;
+package com.example.practicetests.delete;
 
 import java.io.IOException;
 import java.time.Duration;
